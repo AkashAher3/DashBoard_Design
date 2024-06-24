@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Overview</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard Overview</h1>
+        <div class="date-range">
+            <label for="dateRange">Date Range:</label>
+            <input type="date" id="dateRange">
+        </div>
+        <div class="filters">
+            
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">User Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="key-metrics">
+            <div class="card">
+                <h2>Registered Cases</h2>
+                <p>123</p>
+            </div>
+            <div class="card">
+                <h2>Submitted Cases</h2>
+                <p>456</p>
+            </div>
+            <div class="card">
+                <h2>Generated Cases</h2>
+                <p>789</p>
+            </div>
+            <div class="card">
+                <h2>Recorded Cases</h2>
+                <p>101</p>
+            </div>
+            <div class="card">
+                <h2>Issued Cases</h2>
+                <p>112</p>
+            </div>
+            <div class="card">
+                <h2>Non-Compliant Cases</h2>
+                <p>12</p>
+            </div>
+        </section>
+        <section class="charts">
+            <canvas id="progressBarChart"></canvas>
+        </section>
+        <section class="tables">
+            <input type="text" id="tableFilter"  placeholder="Search for cases..">
+            <table id="casesTable">
+                <thead>
+                    <tr>
+                        <th >Case ID</th>
+                        <th >Category</th>
+                        <th >Status</th>
+                        <th >Date Submitted</th>
+                        <th >Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>1001</td>
+                        <td>Registered</td>
+                        <td>Open</td>
+                        <td>2024-01-01</td>
+                        <td>2024-01-02</td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Submitted</td>
+                        <td>Closed</td>
+                        <td>2024-01-03</td>
+                        <td>2024-01-04</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div id="progressbar">
+            <div></div>
+          </div>
+
+
+        <section class="notifications">
+            <div class="alert">
+                <span class="alert-icon">⚠️</span>
+                <p>New compliance alert: Case ID 1234</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kalp Technolohy PVT LTD. All rights reserved.</p>
+        <a href="#">About Us</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
