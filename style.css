@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    background-image: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin-left: 450px;
+}
+
+.date-range,
+.filters {
+    margin-left: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 200px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 50px;
+    
+}
+
+a:hover{
+    color: #fdc50f;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.key-metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.card:hover{
+    background-color:#fdc50f;
+    color: white;
+}
+
+.charts,
+.tables,
+.notifications {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer>a{
+    color: white;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.alert-icon {
+    margin-right: 10px;
+}
+
+#tableFilter {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+}
+
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+#progressbar {
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+  }
+  
+  #progressbar>div {
+    background-color: orange;
+    width: 40%;
+    height: 20px;
+    border-radius: 10px;
+  }
